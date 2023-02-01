@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 .wrapper {
   position: relative;
   height: 100vh;
@@ -6,12 +11,10 @@
   overflow: auto;
   padding: 20px;
 }
-
 .main {
   display: flex;
   justify-content: space-around;
 }
-
 .form,
 .result {
   width: 46%;
@@ -29,8 +32,8 @@
   margin: 0px 0px 10px 0px;
   font-size: 20px;
 }
-
 .form__textarea {
+  font-family: inherit;
   border: 1px solid #000;
   border-radius: 4px;
   min-width: 300px;
@@ -41,6 +44,7 @@
   font-size: 16px;
   align-self: center;
   margin: 0px 10px 10px 10px;
+  padding: 6px;
 }
 .form__button{
   height: 24px;
@@ -49,6 +53,7 @@
   font-size: 18px;
   font-weight: 300;
   transition: 0.5s linear;
+  cursor: pointer;
 }
 .form__button:hover{
   font-size: 20px;
@@ -62,8 +67,6 @@
 .result {
   position: relative;
   padding: 10px 10px 10px 10px;
-}
-.result__title {
 }
 .result__text {
   position: absolute;
