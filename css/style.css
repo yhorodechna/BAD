@@ -1,0 +1,73 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  user-select: none;
+  overflow: auto;
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form,
+.result {
+  width: 46%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 0px 0px;
+}
+.form__label,
+.result__title {
+  margin: 0px 0px 10px 0px;
+  font-size: 20px;
+}
+
+.form__textarea {
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 300px;
+  max-width: 90%;
+  height: 150px;
+  overflow: auto;
+  font-size: 16px;
+  align-self: center;
+  margin: 0px 10px 10px 10px;
+}
+.form__button{
+  height: 24px;
+  border-top: 1px solid #000;
+  border-radius: 0px 0px 4px 4px;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.5s linear;
+}
+.form__button:hover{
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s linear;
+}
+.form__button:active{
+  font-size: 20px;
+  font-weight: 600;
+}
+.result {
+  position: relative;
+  padding: 10px 10px 10px 10px;
+}
+.result__title {
+}
+.result__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+}
