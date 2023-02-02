@@ -5,5 +5,5 @@ function showUniqueSymbolOfTextarea() {
     const uniqueSymbol = getUniqueSymbolFromSentence(textareaValue);
     RESULT_TEXT_EL.innerHTML = uniqueSymbol ?
         uniqueSymbol :
-        "Please type string"
+        "Unique symbol not found!"
 }
