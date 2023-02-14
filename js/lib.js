@@ -12,7 +12,6 @@ function getUniqueSymbolFromWord(word) {
 
 function getUniqueSymbolFromSentence(sentence) {
     const words = sentence.split(' ');
-    debugger;
     const uniqueSymbols = words.map(word => getUniqueSymbolFromWord(word)).filter(symbol => symbol).join('');
     return getUniqueSymbolFromWord(uniqueSymbols)
 }
